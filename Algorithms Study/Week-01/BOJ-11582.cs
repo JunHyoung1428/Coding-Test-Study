@@ -18,10 +18,10 @@ using System.Text;
 public class BOJ11582
 {
 	static int N ; //치킨 집의 갯수 N
-	static int[]? score; // 치킨집 맛의 점수
+	static int[] score=new int[N]; // 치킨집 맛의 점수
 	static int k; //회원들의 수 k
 
-	public static void Solution()
+	public static void Solution() //Main()
 	{
         GetInput();
         Solve();
@@ -31,40 +31,36 @@ public class BOJ11582
     //입력부
 	static void GetInput()
 	{
-        N = int.Parse(Console.ReadLine());
+        N = int.Parse(Console.ReadLine()!);
         score = new int[N];
-        string[] input = Console.ReadLine().Split();
+        string[] input = Console.ReadLine()!.Split();
         for (int i = 0; i < input.Length; i++)
         {
             score[i] = int.Parse(input[i]);
         }
-        k = int.Parse(Console.ReadLine());
+        k = int.Parse(Console.ReadLine()!);
     }
 
     static void Solve()
     {
-        while (N >= 1)
+        
+        while (N > 1)
         {
-            
+            N /= 2;
             for (int i=0; i<=N/2; i++)
             {
-                int index = (int)(i * score.Length / N);
-                int length = (int)(score.Length / N);
+                int index = i * score.Length / N;
+                int length = score.Length / N;
                 Array.Sort(score, index , length);
             }
-
             if (k == N)
             {
                 break;
-            }
-            N /= 2;
+            }  
         }
     }
     static void PrintOut()
     {
-        foreach(int i in score)
-        {
-            Console.Write($"{i} ");
-        }
+        Console.Write(string.Join(" ", score));
     }
 }
