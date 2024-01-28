@@ -25,7 +25,7 @@
 - 2. 문제 별 1명~2명 선별 알고리즘 설명
 ---------------------------------------------------------------------
 
-# 📚코딩 테스트 문제집
+# 📚코딩 테스트 문제집✔️
 ## 📊그래프 탐색🔍
 ### <하>
 |번호|제목|정답률|비고|상태|
@@ -40,7 +40,7 @@
 ### <중> 
 |번호|제목|정답률|비고|상태|
 |-----|:------:|:---:|:---:|:---:|
-|[프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/169199)|리코쳇 로봇|레벨2||❓|
+|[프로그래머스](https://school.programmers.co.kr/learn/courses/30/lessons/169199)|리코쳇 로봇|레벨2|||
 |[1260](https://www.acmicpc.net/problem/1260)|DFS와 BFS|37%|쉬움|  |
 |[2644](https://www.acmicpc.net/problem/2644)|촌수계산|49%|  |
 |[2234](https://www.acmicpc.net/problem/2234)|성곽|47%|  |
@@ -138,7 +138,7 @@
 |[2109](https://www.acmicpc.net/problem/2109)|순회강연|37%|
 |[11501](https://www.acmicpc.net/problem/11501)|주식|34%|
 |[1744](https://www.acmicpc.net/problem/1744)|수 묶기|32%|
-|[1781](https://www.acmicpc.net/problem/1781)|컵라면|32%||✔️|
+|[1781](https://www.acmicpc.net/problem/1781)|컵라면|32%|||
 |[1931](https://www.acmicpc.net/problem/1931)|회의실 배정|30%|
 |[1700](https://www.acmicpc.net/problem/1700)|멀티탭 스케줄링|27%|
 |[2457](https://www.acmicpc.net/problem/2457)|공주님의 정원|26%|
