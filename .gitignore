@@ -1,0 +1,17 @@
+﻿################################################################################
+# 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
+################################################################################
+
+/.vs/Park-JunHyoung/FileContentIndex
+/.vs
+/Algorithms Study/Week-01/obj/Debug/net8.0/ref/Week-01.dll
+/Algorithms Study/Week-01/obj/Debug/net8.0/refint/Week-01.dll
+/Algorithms Study/Week-01/obj/Debug/net8.0/Week-01.sourcelink.json
+/Algorithms Study/Week-01/obj/Debug/net8.0/Week-01.dll
+/Algorithms Study/Week-01/obj/Debug/net8.0/Week-01.AssemblyInfoInputs.cache
+/Algorithms Study/Week-01/obj/Debug/net8.0/Week-01.pdb
+/Algorithms Study/Week-01/obj/Debug/net8.0/Week-01.AssemblyInfo.cs
+/Algorithms Study/Week-01/obj/Debug/net8.0/apphost.exe
+/Algorithms Study/Week-01/bin/Debug/net8.0/Week-01.pdb
+/Algorithms Study/Week-01/bin/Debug/net8.0/Week-01.exe
+/Algorithms Study/Week-01/bin/Debug/net8.0/Week-01.dll
