@@ -21,12 +21,13 @@ public class BOJ4779
 			x = int.Parse(Console.ReadLine());
 			if(x == null) break;
 			Cantor(x);
+			Console.WriteLine();
 		}
 	}
 
-	public void Cantor(int x)
+	public void Cantor(int? x)
 	{
-		int length = Math.Pow(3, x - 1);
+		int length = Math.Pow(3, (double)(x - 1));
 		if(x == 0)
 		{
 			Console.Write("-");
