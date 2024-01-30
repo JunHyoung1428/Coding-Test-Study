@@ -15,13 +15,19 @@ public class BOJ4779
 {
 	public void Solution() //근데 제출하면 오답 뜸
 	{
-		int? x;
+		int x;
 		while(true)
 		{
-			x = int.Parse(Console.ReadLine());
-			if(x == null) break;
+			try
+			{
+                x = int.Parse(Console.ReadLine());
+			}
+			catch
+			{
+				break;
+			}
 			Cantor(x);
-			//Console.WriteLine();
+			Console.WriteLine();
 		}
 	}
 
