@@ -51,7 +51,7 @@ public class BOJ11582
             {
                 int index = i * score.Length / N;
                 int length = score.Length / N;
-                Array.Sort(score, index , length);
+                Array.Sort(score, index , length); //돌리면 잘 돌아가는데 시발 제출하면 ArgumentOutOfRangeException 뜸
             }
             if (k == N)
             {
@@ -59,8 +59,10 @@ public class BOJ11582
             }  
         }
     }
+    //출력부
     static void PrintOut()
     {
         Console.Write(string.Join(" ", score));
+        //시간초과 뜨면 StringBulider 사용해 볼 것
     }
 }

@@ -13,7 +13,7 @@
 
 public class BOJ4779
 {
-	public void Solution()
+	public void Solution() //근데 제출하면 오답 뜸
 	{
 		int? x;
 		while(true)
@@ -21,20 +21,22 @@ public class BOJ4779
 			x = int.Parse(Console.ReadLine());
 			if(x == null) break;
 			Cantor(x);
-			Console.WriteLine();
+			//Console.WriteLine();
 		}
 	}
 
 	public void Cantor(int? x)
 	{
-		int length = Math.Pow(3, (double)(x - 1));
 		if(x == 0)
 		{
 			Console.Write("-");
 			return;
 		}
+		//출력 - 공백 -출력 의 순으로 이뤄짐
 		Cantor(x - 1);
-		for(int i = 0; i < length; i++)
+		//공백의 수 => 3^(n-1)회,  
+        int length = Math.Pow(3, (double)(x - 1));
+        for (int i = 0; i < length; i++)
 		{
 			Console.Write(" ");
 		}
