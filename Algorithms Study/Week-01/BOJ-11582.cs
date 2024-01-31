@@ -43,20 +43,20 @@ public class BOJ11582
 
     static void Solve()
     {
-        
-        while (N > 1)
+        N /= 2;
+        while (N >= 1)
         {
-            N /= 2;
-            for (int i=0; i<=N/2; i++)
+            int length = score.Length / N;
+            for (int i = 0; i < score.Length / length; i++)
             {
-                int index = i * score.Length / N;
-                int length = score.Length / N;
-                Array.Sort(score, index , length); //돌리면 잘 돌아가는데 시발 제출하면 ArgumentOutOfRangeException 뜸
+                int index = i * length;
+                Array.Sort(score, index, length);
             }
             if (k == N)
             {
                 break;
-            }  
+            }
+            N /= 2;
         }
     }
     //출력부
@@ -64,5 +64,6 @@ public class BOJ11582
     {
         Console.Write(string.Join(" ", score));
         //시간초과 뜨면 StringBulider 사용해 볼 것
+        //다행히 시간초과는 안뜸
     }
 }
