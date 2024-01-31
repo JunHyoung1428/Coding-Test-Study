@@ -41,7 +41,7 @@ public class BOJ4779
 		//출력 - 공백 -출력 의 순으로 이뤄짐
 		Cantor(x - 1);
 		//공백의 수 => 3^(n-1)회,  
-        int length = Math.Pow(3, (double)(x - 1));
+        double length = Math.Pow(3, (double)(x - 1));
         for (int i = 0; i < length; i++)
 		{
 			Console.Write(" ");
